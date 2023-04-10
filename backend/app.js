@@ -24,9 +24,9 @@ const swaggerOptions = {
     apis: ['./app.js'],
 };
 
-const swaggerSpec = swaggerJsDoc(swaggerOptions);
+// const swaggerSpec = swaggerJsDoc(swaggerOptions);
 
-app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swgfile));
 
 /**  
 * @swagger
@@ -96,7 +96,7 @@ app.post('/randomtrap',(req,res)=>{
  *                type: number
  *     responses:
  *        200:
- *          description: "The result of the integral calculation"
+ *          description: "ผลลัพย์"
  * 
  * 
  */

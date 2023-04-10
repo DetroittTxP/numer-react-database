@@ -1,94 +1,86 @@
 {
-  "swagger": "1.0.0",
-  "info": {
-    "title": "Caltrap API",
-    "description": "API to calculate definite integrals using the composite trapezoidal rule",
+  "swagger": "2.0",
+  "info":{
+    "title": "NUMER",
     "version": "1.0.0"
   },
-  "basePath": "/api/v1",
-  "tags": [
-    {
-      "name": "randomtrap",
-      "description": "Endpoints to generate random equations"
-    }
+  "basePath": "/",
+  "consumes": [
+    "application/json"
   ],
-  "paths": {
-    "/caltrap": {
-      "post": {
-        "summary": "Calculate the definite integral using the composite trapezoidal rule",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "equation",
-            "description": "The equation to integrate",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "equation": {
-                  "type": "string"
-                },
-                "xlower": {
-                  "type": "number"
-                },
-                "xupper": {
-                  "type": "number"
-                },
-                "n": {
-                  "type": "number"
-                }
-              }
-            }
+  "produces": [
+    "application/json"
+  ],
+  "paths":{
+     "/test":{
+       "get": {
+          "summary": "เทส",
+          "description": "เทสสสสสสส",
+          "produces": [
+            "application/json"
+          ],
+          "responses" :{
+             "200":{
+              "description": "เทสสสสสสสสสสสสสสสสสสส"
+             }
           }
-        ],
-        "responses": {
-          "200": {
-            "description": "The result of the integral calculation",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "result": {
-                  "type": "number"
-                }
-              }
-            }
+       }
+     },
+     "/randomtrap": {
+        "post": {
+          "summary": "สุ่มสมการ",
+          "responses": {
+             "200": {
+                "description": "เยี่ยมมากกกกกก"
+             }
           }
         }
-      }
-    },
-    "/randomtrap": {
-      "post": {
-        "summary": "Generate a random equation",
-        "responses": {
-          "200": {
-            "description": "Returns a random equation",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "equation": {
-                  "type": "string"
-                }
+     },
+     "/caltrap":{
+        "post":{
+           "summary": "คำนวณ TRAPZOIDAL",
+           "consumes":[
+              "application/json"
+           ],
+           "parameters":[
+            {
+              "in": "body",
+              "name": "equation,xlower,xupper,n",
+              "description": "รับสมการ เเละ อินติเกรดตั้งเเต่ xlower - xupper เเละ รับ numberofcomposite ",
+              "required": true,
+              "schema": {
+                 "type": "object",
+                 "properties": {
+                    "equation" :{
+                       "type": "string",
+                       "example": "x^4-13"
+                    },
+                    "xlower":{
+                       "type": "number",
+                       "example": 4
+                    },
+                    "xupper":{
+                      "type": "string",
+                      "example": 8
+                    },
+                    "n":{
+                      "type": "string",
+                      "example": 6
+                    }
+                 }
               }
             }
-          }
+           ],
+           "responses": {
+             "200": {
+                "description": "ผ่าน"
+             },
+             "400":{
+               "description": "ระเบิด"
+             }
+           }
         }
-      }
-    },
-    "/test": {
-      "get": {
-        "description": "Get all names",
-        "responses": {
-          "200": {
-            "description": "SUCCESS"
-          }
-        }
-      }
-    }
+     }
+        
   }
 }
