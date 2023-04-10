@@ -9,6 +9,7 @@ const swgfile = require('./swagger.json')
 
 
 
+
 const app = express();
 app.use(cors());
 app.use(bodyparser.json());
@@ -125,7 +126,7 @@ app.post('/caltrap',(req,res)=>{
 
 const db = mysql.createConnection({
   host: 'localhost',
-  user:'root',
+  user: 'root',
   database: 'numer'
 });
 
