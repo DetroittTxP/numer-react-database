@@ -1,0 +1,64 @@
+.input-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    position: relative;
+    top: 15px;
+}
+
+.x-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+.y-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    margin-left: 80px;
+}
+
+.inter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    margin-left: 30px;
+}
+
+.find-x {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left:16px;
+    position: relative;
+    bottom: 20px;
+}
+
+.interpolate-button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 25px;
+    right: 78px;
+}
+
+.result-interpolation{
+    margin-left: 20px;
+}
+
+.chart-interpolation{
+    background-color: white;
+}
+
+.my-chart-interpolation{
+    background-color: white;
+    position: relative;
+    bottom: 25px;
+    max-width: 50%;
+    margin: 0 auto;
+}

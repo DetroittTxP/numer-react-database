@@ -1,0 +1,116 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "NUMERICAL METHOD"
+  },
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/bisection": {
+      "post": {
+        "summary": "Calculate bisection method",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "equation,xl,xr",
+            "description": "Equation, lower bound and upper bound of the function",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "equation": {
+                  "type": "string",
+                  "example": "x^2-4"
+                },
+                "xl": {
+                  "type": "number",
+                  "example": 1
+                },
+                "xr": {
+                  "type": "number",
+                  "example": 3
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "number",
+                  "example": 2
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/cramer": {
+      "post": {
+        "summary": "Calculate Cramer rule",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "matrix,vector",
+            "description": "Matrix A and Vector B",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Matrix": {
+                  "type": "Array",
+                  "example": "[[2,3,5],[3,1,-2],[1,3,4]]"
+                },
+                "Vector": {
+                  "type": "Array",
+                  "example": "[0,-2,3]"
+                } 
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "Array",
+                  "example": "[1.5,3,-1.5]"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    }
+  
+  }
+}

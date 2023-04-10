@@ -1,0 +1,161 @@
+[
+  {
+    "topic":"root",
+    "label": "BISECTION",
+    "key": "/bisection"
+    
+  },
+  {
+    "topic":"root",
+    "label": "FALSE-POSITION",
+    "key": "/falseposition"
+  },
+  {
+    "topic":"root",
+    "label": "ONE-POINT ITERATION",
+    "key": "/onepoint"
+  },
+  {
+    "topic":"root",
+    "label": "TAYLOR SERIES",
+    "key": "/taylor"
+  },
+  {
+    "topic":"root",
+    "label": "NEWTON RAPHSON",
+    "key": "/newton"
+  },
+  {
+    "topic":"root",
+    "label": "SECANT",
+    "key": "/secant"
+  },
+  {
+    "topic":"linear",
+    "label": "CRAMER",
+    "key": "/cramer"
+  },
+  {
+    "topic":"linear",
+    "label": "GAUSS ELIMINATION",
+    "key": "/gauss"
+  },
+  {
+    "topic":"linear",
+    "label": "GAUSS-JORDAN",
+    "key": "/gaussjordan"
+  },
+  {
+    "topic":"linear",
+    "label": "LU DECOMPOSITION",
+    "key": "/lu"
+  },
+  {
+    "topic":"linear",
+    "label": "CHOLESKY DECOMPOSITION",
+    "key": "/cholesky"
+  },
+  {
+    "topic":"linear",
+    "label": "JACOBI ITERATION",
+    "key": "/jacobi"
+  },
+  {
+    "topic":"linear",
+    "label": "GAUSS-SEIDEL",
+    "key": "/seidel"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "NEWTON DIVIDED DIFFERENCE",
+    "title": "POLYNOMIAL INTERPOLATION",
+    "key": "/newtoninterpolation/polynomial",
+    "seg": "newton"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "NEWTON DIVIDED DIFFERENCE",
+    "title": "QUADRATIC INTERPOLATION",
+    "key": "/newtoninterpolation/quadratic",
+    "seg": "newton"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "NEWTON DIVIDED DIFFERENCE",
+    "title": "LINEAR INTERPOLATION",
+    "key": "/newtoninterpolation/linear",
+    "seg": "newton"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "LAGRANGE INTERPOLATION",
+    "title": "POLYNOMIAL INTERPOLATION",
+    "key": "/lagrange/polynomial",
+    "seg": "lagrange"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "LAGRANGE INTERPOLATION",
+    "title": "QUADRATIC INTERPOLATION",
+    "key": "/lagrange/quadratic",
+    "seg": "lagrange"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "LAGRANGE INTERPOLATION",
+    "title": "LINEAR INTERPOLATION",
+    "key": "/lagrange/linear",
+    "seg": "lagrange"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "SPLINE INTERPOLATION",
+    "title": "LINEAR SPLINE",
+    "key": "/spline/linear",
+    "seg": "spline"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "SPLINE INTERPOLATION",
+    "title": "QUADRATIC SPLINE",
+    "key": "/spline/quadratic",
+    "seg": "spline"
+  },
+  {
+    "refer":"interpolation",
+    "topic": "SPLINE INTERPOLATION",
+    "title": "CUBIC SPLINE",
+    "key": "/spline/cubic",
+    "seg": "spline"
+  },
+  {
+    "topic":"integration",
+    "label": "TRAPEZOIDAL RULE",
+    "key": "/trap"
+  },
+  {
+    "topic":"integration",
+    "label": "COMPOSITE TRAPEZOIDAL RULE",
+    "key": "/compositetrap"
+  },
+  {
+    "topic":"integration",
+    "label": "SIMPSON'S RULE",
+    "key": "/simpson"
+  },
+  {
+    "topic":"integration",
+    "label": "COMPOSITE SIMPSON'S RULE",
+    "key": "/compositesimpson"
+  },
+  {
+    "topic":"Regression",
+    "label":"LINEAR REGRESSION",
+    "key":"/regression"
+  },
+  {
+    "topic":"Regression",
+    "label":"POLYNOMIAL REGRESSION",
+    "key":"/polyregression"
+  }
+]

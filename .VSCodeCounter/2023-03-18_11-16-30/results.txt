@@ -1,0 +1,90 @@
+Date : 2023-03-18 11:16:30
+Directory : c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src
+Total : 47 files,  2519 codes, 11 comments, 492 blanks, all 3022 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         36 |      1,749 |         11 |        393 |      2,153 |
+| JSON       |          3 |        349 |          0 |          2 |        351 |
+| CSS        |          2 |        214 |          0 |         41 |        255 |
+| SCSS       |          5 |        206 |          0 |         56 |        262 |
+| XML        |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                   |         47 |      2,519 |         11 |        492 |      3,022 |
+| . (Files)                                                                                                           |         13 |        545 |          7 |         37 |        589 |
+| components                                                                                                          |         28 |      1,566 |          4 |        360 |      1,930 |
+| components\interpolation                                                                                            |          7 |        320 |          0 |        104 |        424 |
+| components\interpolation\lagrange                                                                                   |          3 |          0 |          0 |          3 |          3 |
+| components\interpolation\newton                                                                                     |          4 |        320 |          0 |        101 |        421 |
+| components\interpolation\newton (Files)                                                                             |          3 |        278 |          0 |         86 |        364 |
+| components\interpolation\newton\chart                                                                               |          1 |         42 |          0 |         15 |         57 |
+| components\linear                                                                                                   |          8 |        567 |          3 |        147 |        717 |
+| components\linear (Files)                                                                                           |          7 |        538 |          3 |        139 |        680 |
+| components\linear\table                                                                                             |          1 |         29 |          0 |          8 |         37 |
+| components\roots                                                                                                    |         13 |        679 |          1 |        109 |        789 |
+| components\roots (Files)                                                                                            |          6 |        361 |          0 |         69 |        430 |
+| components\roots\chart                                                                                              |          2 |        130 |          0 |         16 |        146 |
+| components\roots\table                                                                                              |          5 |        188 |          1 |         24 |        213 |
+| sass                                                                                                                |          6 |        408 |          0 |         95 |        503 |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                            | language   | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\App.js                                                  | JavaScript |         94 |          0 |         18 |        112 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\App.test.js                                             | JavaScript |          7 |          0 |          2 |          9 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\lagrange\lagrangelinear.js     | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\lagrange\lagrangepolynomial.js | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\lagrange\lagrangequadratic.js  | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\newton\chart\polychart.js      | JavaScript |         42 |          0 |         15 |         57 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\newton\newtonlinear.js         | JavaScript |         93 |          0 |         30 |        123 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\newton\newtonpolynomial.js     | JavaScript |        105 |          0 |         29 |        134 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\interpolation\newton\newtonquadratic.js      | JavaScript |         80 |          0 |         27 |        107 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\cholesky.js                           | JavaScript |         70 |          0 |         15 |         85 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\cramer.js                             | JavaScript |         91 |          0 |         20 |        111 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\gauss.js                              | JavaScript |         87 |          0 |         28 |        115 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\gaussjordan.js                        | JavaScript |         83 |          0 |         21 |        104 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\jacobi.js                             | JavaScript |        103 |          3 |         29 |        135 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\lu.js                                 | JavaScript |         50 |          0 |         12 |         62 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\seidel.js                             | JavaScript |         54 |          0 |         14 |         68 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\linear\table\tableJ.js                       | JavaScript |         29 |          0 |          8 |         37 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\bisection.js                           | JavaScript |         66 |          0 |         16 |         82 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\chart\bisecchart.js                    | JavaScript |         85 |          0 |         10 |         95 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\chart\falsechart.js                    | JavaScript |         45 |          0 |          6 |         51 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\falseposition.js                       | JavaScript |         76 |          0 |         13 |         89 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\newtonraphson.js                       | JavaScript |         49 |          0 |          8 |         57 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\onepoint.js                            | JavaScript |         56 |          0 |          9 |         65 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\secant.js                              | JavaScript |         59 |          0 |          7 |         66 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\table\bisectionTable.js                | JavaScript |         40 |          0 |          5 |         45 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\table\falsepostionTable.js             | JavaScript |         37 |          0 |          5 |         42 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\table\newtonTable.js                   | JavaScript |         35 |          0 |          7 |         42 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\table\onepointTable.js                 | JavaScript |         30 |          0 |          3 |         33 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\table\secantTable.js                   | JavaScript |         46 |          1 |          4 |         51 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\components\roots\taylorseries.js                        | JavaScript |         55 |          0 |         16 |         71 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\footer.js                                               | JavaScript |          7 |          0 |          0 |          7 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\header.js                                               | JavaScript |          7 |          0 |          5 |         12 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\index.css                                               | CSS        |         12 |          0 |          2 |         14 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\index.js                                                | JavaScript |         15 |          3 |          3 |         21 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\logo.svg                                                | XML        |          1 |          0 |          0 |          1 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\menu.json                                               | JSON       |        129 |          0 |          0 |        129 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\numerTopic.json                                         | JSON       |         90 |          0 |          1 |         91 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\numerical.js                                            | JavaScript |         40 |          0 |          2 |         42 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\reportWebVitals.js                                      | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\sass\_interpolation.scss                                | SCSS       |         50 |          0 |          8 |         58 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\sass\_linear.scss                                       | SCSS       |         72 |          0 |         21 |         93 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\sass\_main.scss                                         | SCSS       |         26 |          0 |          6 |         32 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\sass\_root.scss                                         | SCSS       |         54 |          0 |         21 |         75 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\sass\style.css                                          | CSS        |        202 |          0 |         39 |        241 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\sass\style.scss                                         | SCSS       |          4 |          0 |          0 |          4 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\setupTests.js                                           | JavaScript |          1 |          4 |          1 |          6 |
+| c:\Users\Detroit\Documents\GitHub\numer-react-api\numer\src\topic.json                                              | JSON       |        130 |          0 |          1 |        131 |
+| Total                                                                                                               |            |      2,519 |         11 |        492 |      3,022 |
++---------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

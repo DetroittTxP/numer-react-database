@@ -1,0 +1,45 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Bisection API"
+basePath: "/"
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /bisection:
+    post:
+      summary: "Calculate bisection method"
+      consumes:
+        - "application/json"
+      parameters:
+        - in: body
+          name: body
+          description: "Equation, lower bound and upper bound of the function"
+          required: true
+          schema:
+            type: object
+            properties:
+              equation:
+                type: string
+                example: "x^2-4"
+              xl:
+                type: number
+                example: 1
+              xr:
+                type: number
+                example: 3
+      responses:
+        200:
+          description: "Successful operation"
+          schema:
+            type: object
+            properties:
+              result:
+                type: number
+                example: 2
+        400:
+          description: "Invalid input"

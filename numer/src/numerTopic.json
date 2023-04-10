@@ -1,0 +1,91 @@
+[
+  {
+    "roots": [
+      {
+        "title": "BISECTION",
+        "key": "/bisection"
+      },
+      {
+        "title": "FALSE-POSITION",
+        "key": "/falseposition"
+      },
+      {
+        "title": "ONE-POINT",
+        "key": "/onepoint"
+      },
+      {
+        "title": "TAYLOR SERIES",
+        "key": "/taylor"
+      },
+      {
+        "title": "NEWTON-RAPHSON",
+        "key": "/newton"
+      },
+      {
+        "title": "SECANT",
+        "key": "/secant"
+      }
+    ]
+  },
+  {
+    "linear": [
+      {
+        "title": "CRAMER",
+        "key": "/cramer"
+      },
+      {
+        "title": "GAUSS ELIMINATION",
+        "key": "/gauss"
+      },
+      {
+        "title": "GAUSS-JORDAN",
+        "key": "/gaussjordan"
+      },
+      {
+        "title": "LU DECOMPOSITION",
+        "key": "/lu"
+      },
+      {
+        "title": "CHOLESKY DECOMPOSITION",
+        "key": "/cholesky"
+      },
+      {
+        "label": "JACOBI ITERATION",
+        "key": "/jacobi"
+      },
+      {
+        "label": "GAUSS-SEIDEL",
+        "key": "/seidel"
+      }
+    ]
+  },
+  {
+    "interpolation":[
+        {
+      "label": "NEWTON DIVIDED DIFFERENCE",
+      "key": "/newtoninterpolation",
+      "children": [
+        {
+          "label": "POLYNOMIAL INTERPOLATION",
+          "key": "/newtoninterpolation/polynomial"
+        }
+      ]
+    },
+    {
+      "label": "LAGRANGE INTERPOLATION",
+      "key": "/lagrange",
+      "children": [
+        {
+          "label": "POLYNOMIAL INTERPOLATION",
+          "key": "/lagrange/polynomial"
+        }
+      ]
+    },
+    {
+      "label": "SPLINE INTERPOLATION",
+      "key": "/spline"
+    }
+      ]
+    }
+  
+]

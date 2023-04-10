@@ -1,0 +1,93 @@
+.formLinear {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+  
+  #linearsubmit{
+     position: relative;
+     left: 70px;
+     
+     background-color: #001529;
+  }
+  
+  #linearReset{
+    position: relative;
+    bottom: 15px;
+    margin-right: 88px;
+  }
+  
+  #vectorb{
+    display: block;
+   
+    padding: 12px;
+    padding-left: 400px;
+  }
+  
+  .vec{
+    margin-bottom: 300px;
+  }
+  
+  .my-chart{
+     justify-content: center;
+     text-align: center;
+     background-color:white;
+      width: 50%;
+      margin-bottom: 10px;
+      margin-left: 27%;
+      position: relative;
+      bottom: 25px;
+  }
+  
+  .input-linear{
+    display:inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+  }
+  
+  #linear-submit{
+    position: relative;
+    bottom: 15px;
+    margin-right: 185px;
+    left: 25px;
+  }
+  
+  
+  .gauss-btn {
+    display: flex;
+    gap:167px;
+  
+    position: relative;
+    bottom: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gauss-btn button:nth-of-type(2) {
+    margin-left: 10px;
+  }
+  #linear-reset{
+    position: relative;
+    bottom: 15px;
+    margin-right: 25px;
+  
+  }
+  
+  .table-jordan{
+    position: relative;
+    bottom: 30px;
+    margin: 0 auto;
+    
+    border: 2px solid;
+  }
+
+  .checkbox-linear{
+     margin-left: 30px;
+  }
+
+  .linear-align-input{
+    display: -moz-inline-box;
+  }
