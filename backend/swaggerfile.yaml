@@ -1,45 +1,41 @@
 swagger: "2.0"
 info:
   version: "1.0.0"
-  title: "Bisection API"
-basePath: "/"
+  title: "Composite Trapezoidal Rule API"
+  description: "Calculates the definite integral of a given equation using the composite trapezoidal rule"
+host: "example.com"
+basePath: "/api"
 schemes:
   - "http"
-consumes:
-  - "application/json"
-produces:
-  - "application/json"
 paths:
-  /bisection:
+/caltrap:
     post:
-      summary: "Calculate bisection method"
+      summary: "Calculate the definite integral using the composite trapezoidal rule"
       consumes:
+        - "application/json"
+      produces:
         - "application/json"
       parameters:
         - in: body
-          name: body
-          description: "Equation, lower bound and upper bound of the function"
+          name: equation
+          description: "The equation to integrate in string format. Example: 'x^2 + 2x + 1'"
           required: true
           schema:
             type: object
             properties:
               equation:
                 type: string
-                example: "x^2-4"
-              xl:
+              xlower:
                 type: number
-                example: 1
-              xr:
+              xupper:
                 type: number
-                example: 3
+              n:
+                type: integer
       responses:
         200:
-          description: "Successful operation"
+          description: "The result of the integral calculation"
           schema:
             type: object
             properties:
               result:
                 type: number
-                example: 2
-        400:
-          description: "Invalid input"

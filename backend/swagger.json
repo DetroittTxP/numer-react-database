@@ -1,46 +1,47 @@
 {
-  "swagger": "2.0",
+  "swagger": "1.0.0",
   "info": {
-    "version": "1.0.0",
-    "title": "NUMERICAL METHOD"
+    "title": "Caltrap API",
+    "description": "API to calculate definite integrals using the composite trapezoidal rule",
+    "version": "1.0.0"
   },
-  "basePath": "/",
-  "schemes": [
-    "http"
-  ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "randomtrap",
+      "description": "Endpoints to generate random equations"
+    }
   ],
   "paths": {
-    "/bisection": {
+    "/caltrap": {
       "post": {
-        "summary": "Calculate bisection method",
+        "summary": "Calculate the definite integral using the composite trapezoidal rule",
         "consumes": [
+          "application/json"
+        ],
+        "produces": [
           "application/json"
         ],
         "parameters": [
           {
             "in": "body",
-            "name": "equation,xl,xr",
-            "description": "Equation, lower bound and upper bound of the function",
+            "name": "equation",
+            "description": "The equation to integrate",
             "required": true,
             "schema": {
               "type": "object",
               "properties": {
                 "equation": {
-                  "type": "string",
-                  "example": "x^2-4"
+                  "type": "string"
                 },
-                "xl": {
-                  "type": "number",
-                  "example": 1
+                "xlower": {
+                  "type": "number"
                 },
-                "xr": {
-                  "type": "number",
-                  "example": 3
+                "xupper": {
+                  "type": "number"
+                },
+                "n": {
+                  "type": "number"
                 }
               }
             }
@@ -48,69 +49,46 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "The result of the integral calculation",
             "schema": {
               "type": "object",
               "properties": {
                 "result": {
-                  "type": "number",
-                  "example": 2
+                  "type": "number"
                 }
               }
             }
-          },
-          "400": {
-            "description": "Invalid input"
           }
         }
       }
     },
-    "/cramer": {
+    "/randomtrap": {
       "post": {
-        "summary": "Calculate Cramer rule",
-        "consumes": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "body",
-            "name": "matrix,vector",
-            "description": "Matrix A and Vector B",
-            "required": true,
-            "schema": {
-              "type": "object",
-              "properties": {
-                "Matrix": {
-                  "type": "Array",
-                  "example": "[[2,3,5],[3,1,-2],[1,3,4]]"
-                },
-                "Vector": {
-                  "type": "Array",
-                  "example": "[0,-2,3]"
-                } 
-              }
-            }
-          }
-        ],
+        "summary": "Generate a random equation",
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Returns a random equation",
             "schema": {
               "type": "object",
               "properties": {
-                "result": {
-                  "type": "Array",
-                  "example": "[1.5,3,-1.5]"
+                "equation": {
+                  "type": "string"
                 }
               }
             }
-          },
-          "400": {
-            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/test": {
+      "get": {
+        "description": "Get all names",
+        "responses": {
+          "200": {
+            "description": "SUCCESS"
           }
         }
       }
     }
-  
   }
 }
