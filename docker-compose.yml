@@ -1,20 +1,37 @@
 version: "3.9"
 
 services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: numer
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
   frontend:
     build: ./numer/
     ports:
-      - "3999:3000"
+      - "9999:3000"
     volumes:
       - ./numer:/app
       - /app/node_modules
       - /app/build
     depends_on:
-      - backend
+      - mysql
   backend:
     build: ./backend
+    environment:
+      - DB_HOST: mysql
+      - DB_POST: 3306
+      - DB_USER: root
+      - DB_PASSWORD: 1234
+      - DB_NAME: numer
     ports:
       - "1234:1234"
     volumes:
       - ./backend:/app
       - /app/node_modules
+

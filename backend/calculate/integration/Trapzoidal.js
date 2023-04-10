@@ -91,13 +91,13 @@ const UnderGraph=(text,xlower,xupper,numbercomposite)=>{
 
  
 
-let eq = '(4x^5)-(3x^4)+(x^3)-6x+2';
-let l = 2;
-let u = 8;
-let n = 2;
-// Caltrapcomposite(eq,l,u,n)
-//  UnderGraph(eq,l,u,n)
+// let eq = '(4x^5)-(3x^4)+(x^3)-6x+2';
+// let l = 2;
+// let u = 8;
+// let n = 2;
+// // Caltrapcomposite(eq,l,u,n)
+// //  UnderGraph(eq,l,u,n)
 
-console.log(compositeTrap(eq,l,u,n));
+// console.log(compositeTrap(eq,l,u,n));
 
 module.exports = {Trapzoidal,compositeTrap}

@@ -60,11 +60,11 @@
                        "example": 4
                     },
                     "xupper":{
-                      "type": "string",
+                      "type": "number",
                       "example": 8
                     },
                     "n":{
-                      "type": "string",
+                      "type": "number",
                       "example": 6
                     }
                  }

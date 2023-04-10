@@ -14,15 +14,15 @@ app.use(cors());
 app.use(bodyparser.json());
 
 
-const swaggerOptions = {
-    swaggerDefinition:{
-        info:{
-            title:'NUMER',
-            version: '1.0.0'
-        }
-    },
-    apis: ['./app.js'],
-};
+// const swaggerOptions = {
+//     swaggerDefinition:{
+//         info:{
+//             title:'NUMER',
+//             version: '1.0.0'
+//         }
+//     },
+//     apis: ['./app.js'],
+// };
 
 // const swaggerSpec = swaggerJsDoc(swaggerOptions);
 
@@ -40,7 +40,7 @@ app.use('/docs', swaggerUI.serve, swaggerUI.setup(swgfile));
 
 app.get('/test',(req,res)=>{
     res.send([
-        {NAME:'HEHE',SIRNAME:'HAHA'}
+        {SUBJECT:'NUMER',FEELING: "ปวดหัว"}
     ])
 })
 
@@ -65,6 +65,15 @@ app.post('/randomtrap',(req,res)=>{
         }   
         res.json(results);
     })
+})
+
+app.get('/simplefetch',(req,res)=>{
+      db.query('SELECT * FROM intregrate',(err,result,fields)=>{
+         if(err){
+            console.log(err);
+         }
+         res.send(result)
+      })
 })
 
 
