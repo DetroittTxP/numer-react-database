@@ -80,7 +80,27 @@
              }
            }
         }
-     }
+     },
+     "/simplefetch": {
+      "get": {
+        "summary": "ดึงมาหมด",
+        "responses": {
+           "200": {
+              "description": "เยี่ยมมากกกกกก"
+           }
+        }
+      }
+   },
+   "/gettoken": {
+      "get": {
+        "summary": "เอา token",
+        "responses": {
+           "200": {
+              "description": "เยี่ยมมา"
+           }
+        }
+      }
+   }
         
   }
 }

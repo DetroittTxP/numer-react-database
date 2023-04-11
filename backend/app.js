@@ -5,7 +5,8 @@ const mysql = require('mysql2');
 const { compositeTrap } = require('./calculate/integration/Trapzoidal');
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express')
-const swgfile = require('./swagger.json')
+const swgfile = require('./swaggerAutogen.json')
+const jwt = require('jsonwebtoken')
 
 
 
@@ -29,6 +30,7 @@ app.use(bodyparser.json());
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swgfile));
 
+
 /**  
 * @swagger
 * /test:
@@ -46,6 +48,8 @@ app.get('/test',(req,res)=>{
 })
 
 
+
+
 /**
  * @swagger
  * /randomtrap:
@@ -58,7 +62,7 @@ app.get('/test',(req,res)=>{
  *       - randomtrap
  */
 
-app.post('/randomtrap',(req,res)=>{
+app.get('/randomtrap',verifyToken,(req,res)=>{
 
     db.query(`SELECT * FROM intregrate ORDER BY RAND() LIMIT 1;`,(error, results, fields)=>{
         if(error){
@@ -76,6 +80,50 @@ app.get('/simplefetch',(req,res)=>{
          res.send(result)
       })
 })
+
+
+// app.get('/gettoken', function (req, res, next) {
+//     // Check the user's credentials and get the user's ID
+//     const userId = 123;
+//     // Generate a token with the user's ID
+//     const token = jwt.sign({ id: userId }, 'your_secret_key', { expiresIn: '1h' });
+//     // Return the token to the client
+//     res.json({ token });
+//   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/gettoken',(req,res,next)=>{
+    const userId = 123;
+    const token = jwt.sign({id:userId},'your_secret_key',{expiresIn:'1h'})
+    res.json({token})
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,7 +167,19 @@ app.post('/caltrap',(req,res)=>{
 
 
 
+function verifyToken(req, res, next) {
+    let token = req.headers["authorization"];
+    if (!token) return res.status(401).json({ message: "token not found" });
+    console.log("token", token);
+    token = token.split(" ")[1];
+    console.log("tokensplit", token);
+    jwt.verify(token, "your_secret_key", (err, decoded) => {
+      if (err) return res.status(401).json({ message: "token error" });
 
+      req.userId = decoded.id;
+      next();
+    });
+  }
 
 
 
@@ -135,8 +195,6 @@ db.connect((err)=> {
   console.log('hehe');
 });
 
-
-
 app.post('/hehe',(req,res)=>{
     const {equation} = req.body
 
@@ -149,9 +207,10 @@ app.post('/hehe',(req,res)=>{
     })
 })
 
-app.post('/caltrap',(req,res)=>{
+app.post('/caltrap', (req,res)=>{
     const {equation,xlower,xupper,n} = req.body
     res.json(compositeTrap(equation,xlower,xupper,n))
+    
 })
 
 
