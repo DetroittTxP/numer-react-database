@@ -1,6 +1,6 @@
 
 import { Typography,Form,InputNumber,Button,} from 'antd'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios'
 const {Title} = Typography;
 const {Item} = Form;
@@ -30,6 +30,10 @@ export const Regression =()=>{
              return newdata;
         })
     }
+
+    useEffect(()=>{
+        setdata(Array.from({length:size}).fill({x:0,fx:0}))
+    },[size])
 
     const input =(index,value,key)=>{
         let newdata = [...data];
